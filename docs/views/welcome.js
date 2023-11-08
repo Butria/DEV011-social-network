@@ -1,6 +1,4 @@
 import { logInGoogle, login } from '../functionAuth.js';
-import logo from "../imgs/logo.png";
-import google from '../imgs/google.png';
 
 export const renderWelcome = (navigateTo) => {
   const header = document.querySelector('header');
@@ -47,10 +45,10 @@ export const renderWelcome = (navigateTo) => {
     }
   });
 
-  const logoImg = document.createElement('img');
-  logoImg.setAttribute('class', 'img-logo');
-  logoImg.src = logo;
-  divWelcome.appendChild(logoImg);
+  const logo = document.createElement('img');
+  logo.setAttribute('class', 'img-logo');
+  logo.src = './imgs/logo.png';
+  divWelcome.appendChild(logo);
 
   const slogan = document.createElement('h2');
   slogan.setAttribute('class', 'h2-slogan');
@@ -71,7 +69,7 @@ export const renderWelcome = (navigateTo) => {
   googleRegisterButton.setAttribute('class', 'google-register-button');
   const googleIcon = document.createElement('img');
   googleIcon.setAttribute('class', 'google-icon');
-  googleIcon.src = google;
+  googleIcon.src = './imgs/google.png';
   const text = document.createTextNode(' Continuar con Google');
   googleRegisterButton.appendChild(googleIcon);
   googleRegisterButton.appendChild(text);
@@ -81,7 +79,9 @@ export const renderWelcome = (navigateTo) => {
     try {
       await logInGoogle();
       navigateTo('/muro');
-    } catch (error) { /* empty */ }
+    } catch (error) {
+    
+    }
   });
   return divWelcome;
 };

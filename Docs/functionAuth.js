@@ -51,7 +51,7 @@ export function login(email, password) {
       .then((userCredential) => {
         const user = userCredential.user;
         resolve(userCredential);
-      })
+      }) 
       .catch((error) => {
         reject(error);
       });

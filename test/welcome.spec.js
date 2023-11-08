@@ -30,6 +30,7 @@ describe("Boton para vista de registro", () => {
   test('Prueba que el botón de registro esté presente si el header no es nulo', () => {
     const header = document.createElement('header');
     const originalQuerySelector = document.querySelector;
+    // eslint-disable-next-line consistent-return
     document.querySelector = jest.fn((selector) => {
       if (selector === 'header') {
         return header;
@@ -40,11 +41,9 @@ describe("Boton para vista de registro", () => {
     const registerButtonWelcome = renderWelcomeDOM.querySelector(".register-button");
     expect(registerButtonWelcome).not.toBe(null);
 
-    document.querySelector = originalQuerySelector; // Restaurar la función original para evitar efectos secundarios en otras pruebas
+    document.querySelector = originalQuerySelector;
   });
 });
-
-
 
 describe("login button", () => {
   test("Test of click login button", () => {

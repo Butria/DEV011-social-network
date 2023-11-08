@@ -23,7 +23,7 @@ header {
   overflow-x: hidden;
   object-fit: contain;
   
-  /* overflow-y: hidden; */
+  
 }
 body {
   background-image: url("../imgs/background.jpg");
@@ -43,7 +43,7 @@ footer {
   justify-content: center;
 }
 
-/* Estilo de formulario login */
+
 form {
   display: flex;
   flex-direction: column;
