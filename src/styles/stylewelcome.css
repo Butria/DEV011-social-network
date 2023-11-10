@@ -35,7 +35,6 @@ footer {
   color: beige;
   height: 50px;
   font-family: sans-serif;
-  margin: 20% 0 0 0;
   width: 100%;
   font-size: 12px;
   display: flex;
@@ -119,15 +118,6 @@ form {
   margin: 5% 18%;
 }
 
-@media (max-width: 412px) {
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-  }
-}
-
 @media (min-width: 720px) {
   .input-user,
   .input-pwd {
@@ -169,11 +159,7 @@ form {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 80% 18%;
   }
-  footer {
-    margin: 0;
-    position: absolute;
-    bottom: 0;
-  }
+
   form {
     background-color: #f7cae4;
     grid-column-start: 2;

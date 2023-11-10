@@ -68,7 +68,7 @@
     grid-template-rows: 22.5% 64.5% 13%;
 }
 
-#div-description{
+.div-description{
     border-radius: 5% 5% 0 0;
     height: 85px;
     display: grid;
@@ -87,7 +87,7 @@
     grid-row-end: 1;
 }
 
-#description-post{
+.description-post{
     padding: 2%;
     font-size: 16px;
     grid-column-start: 1;
